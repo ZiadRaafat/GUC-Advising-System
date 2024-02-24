@@ -1,0 +1,263 @@
+﻿.body-with-image {
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpg') no-repeat; 
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.body-with-gradient {
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(8,31,135,1) 32%, rgba(9,9,121,1) 75%);
+    margin-left: 5px;
+}
+
+html {
+    height: 100%;
+}
+
+.PopAnim {
+    animation: scaleUpCenter 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+h1.PopAnim {
+    font-family: sans-serif;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container h2.typed-out {
+    font-family: sans-serif;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    animation: typing 0.4s steps(8, end) forwards;
+    font-size: 1.6rem;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes scaleUpCenter {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    .button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+button:hover::before {
+    filter: blur(20px);
+}
+
+button:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+/*advisor added*/
+h1 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+    color: white;
+}
+
+.bottomText {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.DivCenter {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.errorText {
+    text-align: center;
+    top: 0;
+    position: fixed;
+    background-color: rgba(169, 169, 169, 0.4);
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+.button1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+button1:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+button1:hover::before {
+    filter: blur(20px);
+}
+
+button1:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+.dashboard-title {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 10px; 
+    width: 100%;
+}
+/*all table styling*/
+.tableStyle {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableRowStyle {
+    border: 1px solid #dddddd;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.tableStyle th,
+.tableStyle td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tableStyle th {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.closeButton {
+    margin-bottom: 10px; 
+}
+
+.label {
+    font-weight: bold;
+    color: white;
+}
+.error {
+    color: rgb(190,0,0);
+    text-align: left;
+    margin-left: 5px;
+    top: 0;
+    position: fixed;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.success {
+    color: rgb(0,190,0);
+    text-align: left;
+    margin-left: 5px;
+    top: 0;
+    position: fixed;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
